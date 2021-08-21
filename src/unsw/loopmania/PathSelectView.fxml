@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="createCustomPath" layoutX="14.0" layoutY="14.0" prefHeight="450.0" prefWidth="400.0">
+        <columnConstraints>
+        </columnConstraints>
+        <rowConstraints>
+        </rowConstraints>
+        <children>
+        </children>
+      </GridPane>
+      <Button fx:id="startCustomGame" layoutX="180.0" layoutY="550.0" mnemonicParsing="false" onAction="#switchToCustomGame" text="Start Game" />
+   </children>
+</Pane>

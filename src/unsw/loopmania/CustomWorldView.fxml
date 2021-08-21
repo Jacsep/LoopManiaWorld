@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="395.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="startGameButton" layoutX="149.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchToPathSelect" text="Pick Path Layout" />
+      <TextField fx:id="widthInput" layoutX="29.0" layoutY="47.0" prefHeight="25.0" prefWidth="112.0" promptText=" Width (MAX=8)" />
+      <Label layoutX="29.0" layoutY="14.0" text="Dimensions">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lengthInput" layoutX="163.0" layoutY="47.0" prefHeight="25.0" prefWidth="112.0" promptText="Length (MAX=15)" />
+      <Label layoutX="29.0" layoutY="179.0" text="Goals">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="93.0" text="Starting Gold">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="goldInput" layoutX="29.0" layoutY="131.0" promptText="Starting Gold" />
+      <RadioButton layoutX="29.0" layoutY="220.0" mnemonicParsing="false" selected="true" text="Experience">
+         <toggleGroup>
+            <ToggleGroup fx:id="pickGoal" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="29.0" layoutY="250.0" mnemonicParsing="false" text="Cycles" toggleGroup="$pickGoal" />
+      <RadioButton layoutX="29.0" layoutY="279.0" mnemonicParsing="false" text="Gold" toggleGroup="$pickGoal" />
+      <TextField fx:id="goalAmount" layoutX="177.0" layoutY="246.0" promptText="Goal Amount" />
+   </children>
+</Pane>
